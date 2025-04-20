@@ -8,8 +8,4 @@ dependencies = [
     "httpx>=0.28.1",
     "mcp[cli]>=1.6.0",
     "requests>=2.32.3",
-    "smithery",
 ]
-
-[tool.uv.sources]
-smithery = { workspace = true }

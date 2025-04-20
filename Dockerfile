@@ -12,8 +12,9 @@ COPY . /app
 
 # Install python dependencies (use pip instead of pipenv/poetry for simplicity)
 RUN pip install --no-cache-dir -r <(grep -v "^#" pyproject.toml | grep -E '^[^\[]') || true
+
 # Instead, manually install dependencies
-RUN pip install --no-cache-dir httpx mcp[cli]>=1.6.0 requests python-dotenv
+RUN pip install --no-cache-dir httpx mcp[cli]>=1.6.0
 
 # Expose port if needed (not necessary for stdio transport)
 
