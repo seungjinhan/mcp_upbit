@@ -1,0 +1,16 @@
+{
+    "name": "hello-world-mcp",
+    "version": "1.0.0",
+    "description": "A simple Hello World MCP server",
+    "main": "index.js",
+    "scripts": {
+      "build": "mkdir -p dist && cp index.js dist/",
+      "start": "node index.js"
+    },
+    "keywords": ["mcp", "smithery", "hello-world"],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "@modelcontextprotocol/mcp": "^0.1.0"
+    }
+  }

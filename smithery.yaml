@@ -1,0 +1,11 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}  # 이 간단한 예제에서는 설정이 필요하지 않습니다
+  commandFunction: |
+    (config) => ({
+      "command": "python",
+      "args": ["server.py"],
+      "env": {}
+    })
