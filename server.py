@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-# Hello World MCP Server in Python
 from typing import Any
-
 from mcp.server.fastmcp import FastMCP
-import os
 
 # Initialize FastMCP server
 mcp = FastMCP("mcp_upbit")
