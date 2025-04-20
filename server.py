@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 # Hello World MCP Server in Python
 from typing import Any
-from datetime import datetime, timedelta
-import json
-import urllib.parse
-import math
-import asyncio
+
 from mcp.server.fastmcp import FastMCP
 import os
 
