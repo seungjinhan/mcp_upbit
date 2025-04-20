@@ -2,10 +2,9 @@ startCommand:
   type: stdio
   configSchema:
     type: object
-    properties: {}  # 기본 설정에서는 추가 설정 필요 없음
+    properties: {}
   commandFunction: |
     (config) => ({ 
       command: 'python', 
-      args: ['server.py'],
-      env: {} 
+      args: ['-m', 'mcp_upbit.server'] 
     })
