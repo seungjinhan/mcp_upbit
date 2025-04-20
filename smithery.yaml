@@ -4,7 +4,7 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    () => ({
-      command: "python",
-      args: ["-m", "mcp_upbit.server"]
+    (config) => ({ 
+      command: 'python', 
+      args: ['-m', 'mcp_upbit.server'] 
     })

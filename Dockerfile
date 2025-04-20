@@ -1,8 +1,5 @@
 FROM python:3.11-alpine
 
-# 시스템 종속성 설치
-RUN apk add --no-cache gcc musl-dev linux-headers
-
 # 작업 디렉토리 설정
 WORKDIR /app
 
